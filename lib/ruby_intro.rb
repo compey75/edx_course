@@ -15,7 +15,19 @@ return suma
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
+
+if arr.length == 0
+ return 0
+elsif arr.length ==1 
+	 return arr[0]
+else
+	arr.sort! {|x, y| y <=> x}
+	max1 = arr.max
+	max2 = arr[1]
+	 return max1 + max2
+	
+end 	
+
 end
 
 def sum_to_n? arr, n
